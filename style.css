@@ -1,0 +1,221 @@
+.page-header {
+    text-align: center;
+    background-color: whitesmoke;
+    /* border-radius: 25px; */
+    box-shadow: 2px 2px 4px gray;
+    font-family: 'Nothing You Could Do', cursive;
+    position: relative;
+}
+
+.page-header:before, .page-header:after {
+    display: block;
+    position: absolute;
+}
+
+.page-header:before {
+    content: url(img/tape.png);
+    left: -290px;
+    top: -170px;
+    transform: rotate(-18deg) scale(.3);
+}
+
+.page-header:after {
+    content: url(img/tape.png);
+    right: -300px;
+    top: -160px;
+    transform: rotate(25deg) scale(.3);
+}
+
+.page-header h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #F07167;
+}
+
+/* .page-header:hover {
+    color: #00AFB9;
+    background-color: #FDFCDC;
+} */
+
+.small-header {
+    color: #00AFB9;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 40px;
+}
+
+.content {
+    padding-left: 85px;
+    padding-right: 75px;
+    font-family: 'Courier Prime';
+}
+
+.content-card {
+    background-color: #FDFCDC;
+    margin: 15px;
+    padding: 20px;
+    /* border-radius: 25px; */
+    box-shadow: 5px 5px 5px #cfcfcf;
+    z-index: 1;
+}
+
+.content-card:hover {
+    background-color: #fffcb3;
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
+.material-icons {
+    transform: translateY(25%);
+}
+
+.row {
+    display: flex;
+}
+
+.topics {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* rounded image */
+
+.paige {
+    border-radius: 50%;
+    height: 35vh;
+    margin-top: 60px;
+    box-shadow: 10px 10px 10px #cfcfcf;
+}
+
+.paige:hover {
+    opacity: .75;
+    transition: .3s ease;
+    transform: scale(1.2);
+}
+
+/* fade */
+
+.fade {
+    transition: .3s ease;
+    opacity: 0;
+}
+
+/* column cards */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.row {
+    margin: 0 -5px;
+    padding-top: 25px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+
+.portfolio-title {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 60vh;
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #FDFCDC;
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Cedarville Cursive', cursive; */
+}
+
+.card:hover {
+    background-color: #fffcb3;
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* pushpin */
+
+.pushpin {
+    text-align: center;
+}
+
+.pushpin img {
+    width: 70px
+}
+
+.pushpin img:hover {
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* cursor */
+
+#cursor {
+    font-size: 33px;
+    display: none;
+}
+
+.contact-paper {
+    background-image: url("img/paper-scrap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-size: 100% 100%
+}
+.contact-text{
+    transform: translate(22%, 33%);
+    font-family: 'Nothing You Could Do', cursive;
+}
+.contact-text a {
+    color: #00AFB9;
+    text-decoration: underline;
+}
+.contact-text a:hover {
+    color: #F07167;
+    text-decoration: underline;
+}

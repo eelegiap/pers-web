@@ -1,0 +1,29 @@
+/* menu styling */
+
+.website-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    background: #00AFB9;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px #cfcfcf;
+}
+.nav-text {
+    text-align: left;
+}
+
+.website-name {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 75px; 
+    padding-right: 50px;
+    /* font-weight: bold; */
+}
+
+.page {
+    padding-left: 40px;
+    font-size: 22px;
+    font-family: 'Courier Prime';
+
+}
