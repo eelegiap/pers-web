@@ -30,19 +30,17 @@
     transform: rotate(25deg) scale(.3);
 }
 
-.page-header h1 {
+.page-header h1, .page-header, h3 {
     font-size: 35px;
     font-weight: bold;
-    color: #F07167;
+    color: #d42501;
+}
+.project-header h1{
+    color: #006494;
 }
 
-/* .page-header:hover {
-    color: #00AFB9;
-    background-color: #FDFCDC;
-} */
-
 .small-header {
-    color: #00AFB9;
+    color: #006494;
     font-family: 'Reenie Beanie', cursive;
     font-size: 40px;
 }
@@ -50,25 +48,34 @@
 .content {
     padding-left: 85px;
     padding-right: 75px;
-    font-family: 'Courier Prime';
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
 }
-
+.content p a {
+    color: #006494;
+}
+.content p a:hover {
+    color: #d42501;
+}
 .content-card {
-    background-color: #FDFCDC;
+    background-color: #ffffc4;
     margin: 15px;
     padding: 20px;
+    /* background: linear-gradient( to bottom, #fff7db, #fffcf1 50%, #fff7db 50%, #fffcf1); */
     /* border-radius: 25px; */
     box-shadow: 5px 5px 5px #cfcfcf;
     z-index: 1;
 }
 
 .content-card:hover {
-    background-color: #fffcb3;
+    background-color: #FFFF99;
     -webkit-transform: rotate(2deg);
     -o-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
 }
-
+.content-card p {
+    font-size: 19px;
+}
 .material-icons {
     transform: translateY(25%);
 }
@@ -92,12 +99,14 @@ p {
     height: 35vh;
     margin-top: 60px;
     box-shadow: 10px 10px 10px #cfcfcf;
+    transform: scale(1.3);
+    opacity: .8;
+    transition: .3s ease;
 }
 
 .paige:hover {
-    opacity: .75;
+    opacity: 1;
     transition: .3s ease;
-    transform: scale(1.2);
 }
 
 /* fade */
@@ -143,9 +152,10 @@ body {
 /* Style the counter cards */
 
 .portfolio-title {
-    padding: 0px;
+    padding: 4px;
     margin: 0px;
     font-family: 'Reenie Beanie', cursive;
+    color: #006494;
 }
 
 .card {
@@ -154,18 +164,29 @@ body {
     /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #FDFCDC;
+    background-color: #ffffc4;
     /* font-family: 'Caveat', cursive; */
     /* font-family: 'Cedarville Cursive', cursive; */
 }
 
 .card:hover {
-    background-color: #fffcb3;
+    background-color: #FFFF99;
     -webkit-transform: rotate(2deg);
     -o-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
 }
 
+.tech-skills {
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+.tech-skills h4 {
+    font-size: 35px;
+}
+
+.proj-desc div ul li{
+    font-size: 20px;
+}
 /* Responsive columns - one column layout (vertical) on small screens */
 
 @media screen and (max-width: 600px) {
@@ -213,16 +234,26 @@ img {
 }
 
 .contact-text {
-    transform: translate(22%, 33%);
+    transform: translate(32%, 25%);
+    max-width: 435px;
     font-family: 'Nothing You Could Do', cursive;
 }
 
 .contact-text a {
-    color: #00AFB9;
+    color: #006494;
     text-decoration: underline;
 }
 
 .contact-text a:hover {
-    color: #F07167;
+    color: #d42501;
     text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    color: #006494;
+    font-family: 'Reenie Beanie', cursive;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+}
+.footer p {
+    font-size: 30px;
 }
